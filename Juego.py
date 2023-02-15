@@ -9,6 +9,13 @@ from Pared import Pared
 class Juego:
     def __init__(self):
         self.laberinto=None
+        
+    def fabricarLaberinto(self):
+        return Laberinto()
+
+    def laberinto2HabitacionFM(self):
+        self.laberinto=self.fabricarLaberinto()
+    
     def laberinto2Habitaciones(self):
         self.laberinto=Laberinto()
 
